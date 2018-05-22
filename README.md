@@ -23,7 +23,7 @@ Reactive Systems are responsive, resilient, elastic, message-driven.
 
 
 ## MERGE & MERGEWITH FUNCTION
-
+```
 @Test
 public void learn_merge()
 {
@@ -45,10 +45,10 @@ public void learn_mergeWith()
    Flux<String> mergedList = fList.mergeWith(lList);
    StepVerifier.create(mergedList).expectNext("Gitti","Ahmet", "Geldi","Oturdu", "Ali", "Veli").verifyComplete();
 }
-
+```
 
 ## ZIP & ZIPWITH FUNCTION
-
+```
 @Test
 public void learn_zip()
 {
@@ -74,3 +74,4 @@ StepVerifier.create(names)
 .expectNext("Mr. John Doe", "Mrs. Jane Blake")
 .verifyComplete();
 }
+```
